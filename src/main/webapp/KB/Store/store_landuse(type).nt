@@ -1,0 +1,98 @@
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/89> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/1> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/98> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/98> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://za-geminat.cnrs.fr/Assolement.owl#LandUse> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/98> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://za-geminat.cnrs.fr/Assolement.owl#NamedIndividual> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/98> <http://za-geminat.cnrs.fr/Assolement.owl#ocsCode> "253"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/98> <http://za-geminat.cnrs.fr/Assolement.owl#luname> "Luzerne 3ans" .
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/98> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/1> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://za-geminat.cnrs.fr/Assolement.owl#LUType> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/1> <http://za-geminat.cnrs.fr/Assolement.owl#tname> "prairies et luzernes" .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid67 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://za-geminat.cnrs.fr/Assolement.owl#LUType> .
+_:genid67 <http://www.w3.org/2000/01/rdf-schema#comment> <http://za-geminat.cnrs.fr/Assolement.owl#name> .
+_:genid67 <http://www.w3.org/2002/07/owl#annotatedSource> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/1> .
+_:genid67 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://za-geminat.cnrs.fr/Assolement.owl#LUType> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/10> <http://za-geminat.cnrs.fr/Assolement.owl#tname> "colza" .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://za-geminat.cnrs.fr/Assolement.owl#LUType> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/11> <http://za-geminat.cnrs.fr/Assolement.owl#tname> "pois" .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://za-geminat.cnrs.fr/Assolement.owl#LUType> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/12> <http://za-geminat.cnrs.fr/Assolement.owl#tname> "mais" .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://za-geminat.cnrs.fr/Assolement.owl#LUType> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/2> <http://za-geminat.cnrs.fr/Assolement.owl#tname> "tournesol" .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://za-geminat.cnrs.fr/Assolement.owl#LUType> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/3> <http://za-geminat.cnrs.fr/Assolement.owl#tname> "foret et friches" .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://za-geminat.cnrs.fr/Assolement.owl#LUType> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/4> <http://za-geminat.cnrs.fr/Assolement.owl#tname> "raygrass" .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://za-geminat.cnrs.fr/Assolement.owl#LUType> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/6> <http://za-geminat.cnrs.fr/Assolement.owl#tname> "ble" .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://za-geminat.cnrs.fr/Assolement.owl#LUType> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/7> <http://za-geminat.cnrs.fr/Assolement.owl#tname> "orgre hiver" .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://za-geminat.cnrs.fr/Assolement.owl#LUType> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/8> <http://za-geminat.cnrs.fr/Assolement.owl#tname> "autre culture" .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://za-geminat.cnrs.fr/Assolement.owl#LUType> .
+<http://za-geminat.cnrs.fr/Assolement.owl#LUType/9> <http://za-geminat.cnrs.fr/Assolement.owl#tname> "urban" .
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/104> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/1>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/110> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/298> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/9>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/387> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/188> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/6>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/220> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/10>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/202> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/6>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/263> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/2>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/236> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/11>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/331> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/3>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/248> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/180> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/6>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/208> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/7>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/57> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/1>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/3> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/1>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/244> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/25> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/1>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/38> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/3>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/254> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/12>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/278> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/9>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/234> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/116> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/161> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/1>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/149> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/143> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/359> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/125> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/4>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/81> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/1>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/219> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/76> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/1>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/137> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/2>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/117> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/229> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/322> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/9>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/179> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/89> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/1>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/217> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/214> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/275> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/134> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/12>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/1481> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/147> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/1483> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/98> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/1>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/230> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/247> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/1484> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/9>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/273> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/1482> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/1479> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/1480> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/1485> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/3>.
+<http://za-geminat.cnrs.fr/Assolement.owl#LandUse/1486> <http://za-geminat.cnrs.fr/Assolement.owl#BLTLUT1> <http://za-geminat.cnrs.fr/Assolement.owl#LUType/8>.

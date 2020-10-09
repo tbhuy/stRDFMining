@@ -1,0 +1,22 @@
+PREFIX strdf: <http://strdf.di.uoa.gr/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix time: <http://www.w3.org/2006/time#>
+prefix gem: <http://za-geminat.cnrs.fr/Assolement.owl#>
+select ?name ?name2 (count (*) as ?num)
+where 
+{
+   ?nestobsv gem:isNestOf ?sp.
+   ?nestobsv gem:hasTime ?t.
+   ?t time:inside ?i.
+   ?ts gem:hasTime ?i.
+   ?nestobsv gem:geometry ?geomn.
+   ?ts gem:pgeometry ?geom.
+   filter (strdf:within(?geomn,?geom))
+   ?ts gem:hasLandUse ?c.
+   ?c gem:BLTLUT1 ?type.
+   ?type gem:tname ?name2.
+   ?sp gem:sname ?name.
+}
+group by ?name2 ?name 

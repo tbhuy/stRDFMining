@@ -1,0 +1,7 @@
+prefix gem: <http://za-geminat.cnrs.fr/Assolement.owl#>
+select *
+where
+{
+    ?trapset gem:numOfIndv ?q.
+}
+limit 1000

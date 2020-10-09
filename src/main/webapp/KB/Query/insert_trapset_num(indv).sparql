@@ -1,0 +1,15 @@
+prefix gem: <http://za-geminat.cnrs.fr/Assolement.owl#>
+insert
+{
+?trapset gem:numOfIndv ?q.
+}
+where
+{
+select ?trapset (COUNT(?indobsv) as ?q)
+where
+{
+?indobsv a gem:Observation.
+?indobsv gem:isRecordedFrom ?trapset.
+}
+group by ?trapset
+}

@@ -1,0 +1,18 @@
+prefix time: <http://www.w3.org/2006/time#>
+
+insert
+{
+?a time:inside ?b.
+}
+
+where {
+?a a time:Instant.
+?a time:inXSDDateTime ?dt.
+?b a time:ProperInterval.
+?b time:hasBeginning ?be.
+?b time:hasEnd ?end.
+?be time:inXSDDateTime ?dt1.
+?end time:inXSDDateTime ?dt2.
+filter(?dt>=?dt1 && ?dt<=?dt2)
+
+}

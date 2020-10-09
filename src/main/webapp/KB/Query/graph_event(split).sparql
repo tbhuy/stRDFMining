@@ -1,0 +1,17 @@
+PREFIX strdf: <http://strdf.di.uoa.gr/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix time: <http://www.w3.org/2006/time#>
+prefix gem: <http://za-geminat.cnrs.fr/Assolement.owl#>
+select (concat("Y-",xsd:string(year(?dt))) as ?year) (count(*) as ?total)
+where
+{
+  ?tsa gem:hasSplit ?tsb.
+  ?tsb gem:hasTime ?intvb.
+  ?intvb time:hasBeginning ?be.
+  ?be time:inXSDDateTime ?dt.
+  
+}
+group by ?dt
+order by ?year

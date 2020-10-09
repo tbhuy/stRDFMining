@@ -1,0 +1,32 @@
+ PREFIX strdf: <http://strdf.di.uoa.gr/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix time: <http://www.w3.org/2006/time#>
+prefix gem: <http://za-geminat.cnrs.fr/Assolement.owl#>
+PREFIX uom: <http://www.opengis.net/def/uom/OGC/1.0/>
+select  ?num (strdf:distance(?geomnest, ?geomtrap, uom:metre) as ?dist)
+ where
+ {
+       ?trap a gem:Trapset.
+       ?trap gem:numOfIndv ?num.
+       ?trap gem:hasTime ?t1.
+       ?t1 gem:year ?y1.
+       ?nest a gem:NestObsv.
+       ?nest gem:hasTime ?t2.
+       ?nest gem:isNestOf ?sp.
+       ?sp gem:sname "Busard cendré".
+       ?t2 gem:year ?y2.
+       filter(?y2=?y1+1)
+       ?nest gem:geometry ?geomnest.
+       ?ts gem:pgeometry ?geom.
+       filter (strdf:within(?geom,?geom))
+       ?ts gem:hasLandUse ?lu.
+       ?lu gem:BLTLUT1 ?ty.
+       ?ty gem:tname "ble".
+       ?trap gem:geometry ?geomtrap.
+     
+  }
+
+        
+             

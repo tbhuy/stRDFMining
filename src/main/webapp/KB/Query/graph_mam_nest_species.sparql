@@ -1,0 +1,26 @@
+PREFIX strdf: <http://strdf.di.uoa.gr/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix time: <http://www.w3.org/2006/time#>
+prefix gem: <http://za-geminat.cnrs.fr/Assolement.owl#>
+PREFIX uom: <http://www.opengis.net/def/uom/OGC/1.0/>
+select  ?name ?name2 (count(*) as ?total)
+ where
+ {
+ 
+   ?trap a gem:Trapset.
+   ?trap gem:geometry ?geomt.
+   ?nestobs a gem:NestObsv.
+   ?nestobs gem:geometry ?geomn.
+   filter(strdf:distance(?geomn, ?geomt, uom:metre)<="200"^^xsd:double)
+   ?trap gem:numOfIndv ?num.
+   ?nestobs gem:isNestOf ?sp.
+   ?sp gem:sname ?name.
+   ?ind gem:isRecordedFrom ?trap.
+   ?ind gem:belongTo ?sp2.
+   ?sp2 gem:sname ?name2.
+
+ }
+group by ?name ?name2
+having (?total>10)

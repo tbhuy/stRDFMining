@@ -1,0 +1,52 @@
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix strdf: <http://strdf.di.uoa.gr/ontology#> .
+@prefix : <http://strdf.di.uoa.gr/ontology#> .
+@base <http://strdf.di.uoa.gr/ontology> .
+
+<http://strdf.di.uoa.gr/ontology> rdf:type owl:Ontology .
+
+strdf:geometry 	rdf:type rdfs:Datatype ;
+				dc:contributor "Kostis Kyzirakos"@en ;
+				dc:contributor "Manos Karpathiotakis"@en ;
+				dc:contributor "Manolis Koubarakis"@en;
+				dc:date "2011-08-11"^^xsd:date ;
+				dc:description "A serialization of a geometric object"@en ;
+				rdfs:label "A geometric object."@en ;
+				rdfs:comment "The serialization of a geometric object."@en .
+				
+strdf:WKT 	rdf:type rdfs:Datatype ;
+			rdfs:subClassOf strdf:geometry ;
+			dc:contributor "Kostis Kyzirakos"@en ;
+			dc:contributor "Manos Karpathiotakis"@en ;
+			dc:contributor "Manolis Koubarakis"@en ;
+			dc:date "2011-08-11"^^xsd:date ;
+			dc:description "The Well-known Text serialization of a geometric object"@en ;
+			rdfs:label "WKT	serialization of a geometric object."@en ;
+			rdfs:comment "The Well-known Text serialization of a geometric object."@en ;
+			owl:sameAs <http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+strdf:GML 	rdf:type rdfs:Datatype ;
+			rdfs:subClassOf strdf:geometry ;
+			dc:contributor "Kostis Kyzirakos"@en ;
+			dc:contributor "Manos Karpathiotakis"@en ;
+			dc:contributor "Manolis Koubarakis"@en ;
+			dc:date "2011-08-11"^^xsd:date ;
+			dc:description "The GML serialization of a geometric object"@en ;
+			rdfs:label "GML serialization of a geometric object."@en ;
+			rdfs:comment "The Geography Markup Language serialization of a geometric object."@en ;
+			owl:sameAs <http://www.opengis.net/ont/geosparql#gmlLiteral> .
+
+
+strdf:period  rdf:type rdfs:Datatype ;
+			dc:contributor "Konstantina Bereta"@en ;
+			dc:contributor "Manolis Koubarakis"@en;
+			dc:date "2012-12-01"^^xsd:date ;
+			dc:description "Representation of a period of time"@en ;
+			rdfs:label "A period of time."@en ;
+			rdfs:comment "Representation of a period of time."@en .
+								

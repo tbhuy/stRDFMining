@@ -1,0 +1,8 @@
+prefix gem: <http://za-geminat.cnrs.fr/Assolement.owl#>
+select *
+	where
+    {
+       ?ts1 gem:hasFiliation ?ts2.
+     }
+	
+limit 1000

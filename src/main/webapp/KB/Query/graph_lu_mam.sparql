@@ -1,0 +1,26 @@
+PREFIX strdf: <http://strdf.di.uoa.gr/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix time: <http://www.w3.org/2006/time#>
+prefix gem: <http://za-geminat.cnrs.fr/Assolement.owl#>
+
+select (concat("Y-",xsd:string(year(?dt))) as ?year) ?typename (sum(?num) as ?total)
+where
+{
+ ?trap a gem:Trapset.
+ ?trap gem:hasTime ?t.
+ ?trap gem:geometry ?geomp.
+ ?ts gem:pgeometry ?geom.
+ filter(strdf:within(?geomp,?geom))
+ ?t time:inside ?int.
+ ?ts gem:hasTime ?int.
+ ?ts gem:hasLandUse ?lu.
+ ?lu gem:BLTLUT1 ?type.
+ ?type gem:tname ?typename.
+ ?int time:hasBeginning ?bg. 
+ ?bg time:inXSDDateTime ?dt.
+ ?trap gem:numOfIndv ?num.
+
+}
+group by ?dt ?typename

@@ -1,0 +1,26 @@
+ PREFIX strdf: <http://strdf.di.uoa.gr/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix time: <http://www.w3.org/2006/time#>
+prefix gem: <http://za-geminat.cnrs.fr/Assolement.owl#>
+select  ?name2 (count(*) as ?num)
+ where
+ {
+ 
+        ?ts1 rdf:type gem:TimeSlice.
+        ?ts1 gem:hasLandUse ?c1.
+        ?c1 gem:BLTLUT1 ?type1.
+        ?type1 gem:tname ?name1.
+        ?ts1 gem:hasFiliation ?ts2.
+	?ts2 gem:hasLandUse ?c2.
+        ?c2 gem:BLTLUT1 ?type2.
+        ?type2 gem:tname ?name2.
+        filter(?name1="foret et friches" && ?type1!=?type2)
+        ?ts1 gem:hasTime ?ti.
+        ?ti time:hasBeginning ?bg.
+        ?bg time:inXSDDateTime "2009-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>
+    
+ }
+group by ?name2       
+             

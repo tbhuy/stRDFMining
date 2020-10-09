@@ -1,0 +1,18 @@
+prefix time: <http://www.w3.org/2006/time#>
+     insert
+    {
+       ?t1 time:intervalMeets ?t2.
+    }
+	
+ 	where
+ 	{
+ 
+ 	
+        ?t1 a time:ProperInterval.
+		?t2 a time:ProperInterval.
+        ?t2 time:hasBeginning ?b1.
+        ?t1 time:hasEnd ?b2.
+        filter(?b1=?b2)
+       
+        
+ 	}

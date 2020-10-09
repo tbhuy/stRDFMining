@@ -1,0 +1,20 @@
+ PREFIX strdf: <http://strdf.di.uoa.gr/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix time: <http://www.w3.org/2006/time#>
+prefix gem: <http://za-geminat.cnrs.fr/Assolement.owl#>
+select *
+where 
+{
+ ?trap a gem:Trapset.
+ ?trap gem:hasTime ?t.
+ ?w a gem:Weather.
+ ?w gem:hasTime ?ti.
+ ?t time:inside ?ti.
+ ?trap gem:numOfIndv ?num.
+ ?w gem:rain ?rain.
+
+}
+   
+             

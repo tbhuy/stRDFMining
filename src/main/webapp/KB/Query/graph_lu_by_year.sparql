@@ -1,0 +1,21 @@
+PREFIX strdf: <http://strdf.di.uoa.gr/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix time: <http://www.w3.org/2006/time#>
+prefix gem: <http://za-geminat.cnrs.fr/Assolement.owl#>
+select  (Concat("Y-", xsd:string(year(?dt))) as ?dat) ?name (count(*) as ?num)
+ where
+ {
+ 
+        ?ts1 rdf:type gem:TimeSlice.
+        ?ts1 gem:hasLandUse ?c1.
+        ?c1 gem:BLTLUT1 ?type.
+        ?type gem:tname ?name.
+        ?ts1 gem:hasTime ?t.
+        ?t time:hasBeginning ?bg.
+        ?bg time:inXSDDateTime ?dt.
+        
+    
+ }
+group by ?name ?dt

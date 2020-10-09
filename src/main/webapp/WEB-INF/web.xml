@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>FileUpload</servlet-name>
+        <servlet-class>ulr.l3i.strdfmining.FileUpload</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileUpload</servlet-name>
+        <url-pattern>/FileUpload</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>StoreManager</servlet-name>
+        <servlet-class>ulr.l3i.strdfmining.StoreManager</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StoreManager</servlet-name>
+        <url-pattern>/StoreManager</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>RDFDump</servlet-name>
+        <servlet-class>ulr.l3i.strdfmining.RDFDump</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RDFDump</servlet-name>
+        <url-pattern>/RDFDump</url-pattern>
+    </servlet-mapping>
+    
+      <servlet>
+        <servlet-name>InsertAnnotation</servlet-name>
+        <servlet-class>ulr.l3i.strdfmining.InsertAnnotation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertAnnotation</servlet-name>
+        <url-pattern>/InsertAnnotation</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>Query</servlet-name>
+        <servlet-class>ulr.l3i.strdfmining.Query</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Query</servlet-name>
+        <url-pattern>/Query</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>CacheCheck</servlet-name>
+        <servlet-class>ulr.l3i.strdfmining.CacheCheck</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CacheCheck</servlet-name>
+        <url-pattern>/CacheCheck</url-pattern>
+    </servlet-mapping>
+    
+     
+    <servlet>
+        <servlet-name>KBDump</servlet-name>
+        <servlet-class>ulr.l3i.strdfmining.KBDump</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>KBDump</servlet-name>
+        <url-pattern>/KBDump</url-pattern>
+    </servlet-mapping>
+    
+         
+    <servlet>
+        <servlet-name>CacheDelete</servlet-name>
+        <servlet-class>ulr.l3i.strdfmining.CacheDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CacheDelete</servlet-name>
+        <url-pattern>/CacheDelete</url-pattern>
+    </servlet-mapping>
+    
+    
+        <servlet>
+        <servlet-name>Config</servlet-name>
+        <servlet-class>ulr.l3i.strdfmining.Config</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Config</servlet-name>
+        <url-pattern>/Config</url-pattern>
+    </servlet-mapping>
+    
+    
+</web-app>

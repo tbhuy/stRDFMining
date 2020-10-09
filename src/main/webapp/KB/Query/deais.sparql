@@ -1,0 +1,13 @@
+PREFIX deais: <http://l3i.univ-lr.fr/deAIS#>
+PREFIX strdf: <http://strdf.di.uoa.gr/ontology#>
+SELECT *
+WHERE { 
+?v a deais:Vessel.
+?v deais:hasSegment ?seg.
+?seg deais:geometry ?geom.
+?zone a deais:Zone.
+?zone deais:name "Route Ecart Type".
+?zone deais:geometry ?geomz.
+filter(strdf:intersects(?geomz,?geom))
+ }
+LIMIT 100

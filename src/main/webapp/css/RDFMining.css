@@ -1,0 +1,221 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 28, 2017, 10:31:37 AM
+    Author     : Tran
+*/
+.container
+{
+    border-color:     #3092c0;
+    border-width: 5px;
+    border-style: solid;
+    width: 100%;
+    height: 95%;
+
+}
+
+
+#host,#storename
+{
+    width: 150px;
+}
+#config input
+{
+    min-width: 80px;
+}
+
+#config 
+{
+    line-height: 2;
+
+}
+
+
+#hide{
+    float:left;
+}
+.header 
+{
+    height:50px;
+    color: white;
+    background-color: #3092c0;
+}
+.footer
+{
+    height:20px;
+    color: white;
+    background-color: #3092c0;
+    clear: both;
+}
+
+.content {
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+}
+.left {
+    width: 25%;
+    float:left;
+    display:block;
+    margin: auto;
+
+    height: 100%;
+}
+
+.right {
+
+    width: 74%;
+    float:right;
+    display:block;
+    margin: auto;
+    height: 100%;
+    padding-left: 5px;
+
+}
+
+
+
+
+#md5
+{
+    float:right;
+}
+
+
+
+#algo
+{
+    float:left;
+    clear:both;
+}
+
+
+
+
+input {
+    width: 50px;
+}
+
+#text {  
+ height: 800px;
+ width: 400px;
+     
+
+
+}
+
+#mouse-position
+{
+
+   position: absolute;
+    top: 20px;
+     right: 0;
+    width: 150px;
+    height: 200px;
+    color: white;
+    font-size: 125%;
+    z-index: 9999;
+
+
+}
+
+#status
+{
+
+position: absolute;
+    top: 20px;
+     right: 0;
+    width: 550px;
+    height: 50px;
+    text-align:left;
+    color: white;
+    font-size: 125%;
+    z-index: 9999;
+
+
+}
+.viz
+{
+
+
+    overflow: auto;
+    height:  530px;
+
+
+
+}
+#div_list
+{
+    clear: both;
+    height:  310px;
+    overflow: scroll;
+
+}
+
+
+
+
+#listvariable
+{
+    width: 90%;
+
+}
+
+
+
+.ol-popup {
+    position: absolute;
+    background-color: white;
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+    min-width: 250px;
+    max-width: 550px;
+    opacity: 0.75;
+}
+.ol-popup:after, .ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+}
+.ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+}
+.ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+.ol-popup-closer:after {
+    content: "✖";
+}
+
+
+
+.map {
+
+    height: 100%;
+    width: 100%;
+
+}
